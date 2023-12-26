@@ -26,7 +26,7 @@ void Dijkstra(std::vector<Nodo>* V, Nodo* s) throw(ErroriCoda)
 
     Initialize_Single_Source(V, V->size(), s);
 
-    std::stack<Nodo*> S; // inutile, presente solo per "fedelt�" allo pseudocodice
+    std::stack<Nodo*> S; // inutile, presente solo per "fedeltà" allo pseudocodice
 
     MinPriorityQueue<Nodo> Q;
 
@@ -152,7 +152,7 @@ int main()
     bool found1, found2;
     int i1, i2;
     int i = 0;
-    bool dij = true; // false <=> Dijkstra non pu� essere eseguito
+    bool dij = true; // false <=> Dijkstra non può essere eseguito
 
     std::cout << "Inserire gli archi del grafo con la seguente sintassi:\n\nnodo1 nodo2 peso_arco(nodo1, nodo2)\n";
     std::cout << "\nAttenzione alla distinzione maiuscole / minuscole: e' case-sensitive\n";
@@ -181,7 +181,7 @@ int main()
                 dij = false;
             }
 
-            // Dijkstra non pu� essere eseguito su un grafo con archi di peso negativo
+            // Dijkstra non può essere eseguito su un grafo con archi di peso negativo
 
             i1 = 0;
             i2 = 0;
